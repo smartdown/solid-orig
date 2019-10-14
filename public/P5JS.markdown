@@ -1,4 +1,3 @@
-
 ### P5JS
 
 Smartdown integrates the wonderful [P5.js](https://p5js.org/) Javascript library, which provides a way for authors to embed *sketches* within their Smartdown documents.
@@ -34,7 +33,7 @@ var message = "tickle",
   x, y; // x and y coordinates of the text
 
 p5.preload = function preload() {
-  console.log('old:', smartdown.baseURL + 'gallery/resources/SourceSansPro-Regular.otf');      
+  console.log('old:', smartdown.baseURL + 'gallery/resources/SourceSansPro-Regular.otf');
   console.log('new:', 'https://unpkg.com/smartdown-gallery/resources/SourceSansPro-Regular.otf');
   font = p5.loadFont('https://unpkg.com/smartdown-gallery/resources/SourceSansPro-Regular.otf');
 };
@@ -114,7 +113,7 @@ function draw() {
 
 ---
 
-The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/P5JS.markdown and (*soon*) via [GitHub](https://github.com/smartdown/solid/site/P5JS.markdown).
+The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/P5JS.markdown and via [GitHub](https://github.com/smartdown/solid/public/P5JS.markdown).
 
 ---
 

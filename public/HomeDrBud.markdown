@@ -6,7 +6,9 @@ This document is sourced from:
 
 but may be rendered via a different Smartdown viewer within another site.
 
-#### Back to the origin
+#### Visit other Smartdown-on-Solid pages
 
-[Smartdown Home](:@https://smartdown.solid.community/public/Home.markdown)
+- [doctorbud.solid.community](:@https://doctorbud.solid.community/public/Home.markdown)
+- [smartdown.solid.community](:@https://smartdown.solid.community/public/Home.markdown)
+- [Smartdown/Solid Container Navigation](:@https://doctorbud.solid.community/public/SolidLDFlexContainer.markdown)
 

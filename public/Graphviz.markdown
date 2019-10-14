@@ -1,4 +1,3 @@
-
 ### Graphviz via `viz.js`
 
 Smartdown has integrated the powerful [viz.js](https://github.com/mdaines/viz.js) library, which is compiled into Javascript from the original Graphviz C code.
@@ -193,7 +192,7 @@ digraph L0 {
 
 ---
 
-The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/Graphviz.markdown and (*soon*) via [GitHub](https://github.com/smartdown/solid/site/Graphviz.markdown).
+The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/Graphviz.markdown and via [GitHub](https://github.com/smartdown/solid/public/Graphviz.markdown).
 
 ---
 

@@ -1,8 +1,6 @@
 ### Smartdown using Solid via LDFlex
 
-*Smartdown is a Markdown-compatible language for authoring interactive documents. It resembles Jupyter, but has a version-compatible source format, and requires no server to remain interactive. Good for experimenting with, integrating and discussing other technology*.
-
-Solid complements Smartdown nicely, by providing a *place* and an authentication scheme to enable controlled access (read and write) to this data.
+> Smartdown is a Markdown-compatible language for authoring interactive documents. It resembles Jupyter, but has a version-compatible source format, and requires no server to remain interactive. Good for experimenting with, integrating and discussing other technology. Solid complements Smartdown nicely, by providing a *place* to store documents, and an *identity* to enable controlled access (read and write) to this data.
 
 I wanted to try out [query-ldflex](https://github.com/solid/query-ldflex) and see whether it could be useful via Smartdown. So I've adapted the examples from query-ldflex to perform some queries against a specified profile, such as [Ruben Verborgh's](https://ruben.verborgh.org/profile/#me) well-annotated profile, or my own, far less prolific [DoctorBud](https://doctorbud.solid.community/profile/card#me) Solid Community profile.
 
@@ -137,7 +135,7 @@ this.depend = function() {
 
 ---
 
-The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/SolidLDFlex.markdown and (*soon*) via [GitHub](https://github.com/smartdown/solid/site/SolidLDFlex.markdown).
+The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/SolidLDFlex.markdown and via [GitHub](https://github.com/smartdown/solid/public/SolidLDFlex.markdown).
 
 ---
 

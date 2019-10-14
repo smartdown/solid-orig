@@ -319,7 +319,7 @@ this.depend = function() {
 
 ---
 
-The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/LDF.markdown and (*soon*) via [GitHub](https://github.com/smartdown/solid/site/LDF.markdown).
+The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/LDF.markdown and via [GitHub](https://github.com/smartdown/solid/public/LDF.markdown).
 
 ---
 

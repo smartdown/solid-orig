@@ -1,6 +1,6 @@
 ### Welcome to Smartdown on Solid
 
-This is an experiment that stores [Smartdown](https://smartdown.io) documents in a [Solid](https://solid.github.io/information/) POD, and enables those documents to be rendered via a Smartdown viewer app that is hosted on the same POD.
+This is an experiment that stores [Smartdown](https://smartdown.io) documents in a [Solid](https://solid.github.io/information/) POD, and enables those documents to be rendered via a Smartdown viewer app that is hosted on the same POD. The source for this project is at [smartdown/solid](https://github.com/smartdown/solid).
 
 #### Smartdown Basics
 
@@ -14,9 +14,14 @@ Typically, a Smartdown project (aka notebook) is stored in one or more markdown 
 
 #### Smartdown on Solid
 
+Smartdown is a Markdown-compatible language for authoring interactive documents. It resembles Jupyter, but has a version-compatible source format, and requires no server to remain interactive. Good for experimenting with, integrating and discussing other technology. Solid complements Smartdown nicely, by providing a *place* to store documents, and an *identity* to enable controlled access (read and write) to this data.
+
 Because Smartdown uses `XMLHttpRequest` to load its documents, a Smartdown project can be stored anywhere on the web that is HTTPS-accessible (and that supports CORS). Typically, I use GitHub to store my Smartdown content, and I have a separate web application that uses Smartdown to load and render this content.
 
-With Solid, I can store and edit the Smartdown docs in the context of Solid's POD and Data Browser, and I can host the viewer web app in Solid. More importantly, I can store data in the POD that can be accessed and visualized by Smartdown playables (I haven't exercised this feature for this demo, but it will work).
+With Solid, I can store and edit the Smartdown docs in the context of Solid's POD and Data Browser, and I can host the viewer web app in Solid. More importantly, I can store data in the POD that can be accessed and visualized by Smartdown playables. For examples of Solid-specific Smartdown usage, see:
+
+- [Smartdown using Solid via LDFlex](:@/public/SolidLDFlex.markdown)
+- [Smartdown/Solid Container Navigation](:@/public/SolidLDFlex.markdown)
 
 
 #### Source for this card
@@ -49,9 +54,11 @@ Following the instructions in [Web Access Control Specification](https://github.
 
 This particular line of Home.markdown doc was modified by `drbud`, even though the POD is owned by `smartdown`. ... **https://drbud.solid.community/profile/card#me was here**
 
+#### Playing with RDF, LDFlex and More
 
-#### Testing Query Capability
-
+- [LDFlex and Containers](:@/public/SolidLDFlexContainer.markdown)
 - [LDFlex](:@/public/SolidLDFlex.markdown)
 - [Queries](:@/public/SolidQueries.markdown)
 
+---
+---
