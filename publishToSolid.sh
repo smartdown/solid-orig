@@ -17,23 +17,20 @@ upload() {
 	remoteFile=$localFile
 	fi
 	remoteURL=${base}/${remoteFile}
-	curl --cookie "connect.sid=${sid}" --upload-file ${localFile} ${remoteURL}
+
+	filename=$(basename -- "$remoteFile")
+	extension="${filename##*.}"
+	filename="${filename%.*}"
+
+	extensionLC="$(tr [A-Z] [a-z] <<< "$extension")"
+	if [ ${extensionLC} == "html" ]; then
+		curl --cookie "connect.sid=${sid}" -H "Content-Type: text/html" --upload-file ${localFile} ${remoteURL}
+	else
+		curl --cookie "connect.sid=${sid}" ${mimeHeaders} --upload-file ${localFile} ${remoteURL}
+	fi
+	echo ""
 }
 export -f upload
-
-# upload_html <localFile> [<remoteFile>]
-upload_html() {
-	localFile=$1
-	remoteFile=$2
-	if [ -z "$remoteFile" ]
-	then
-	remoteFile=$localFile
-	fi
-	remoteURL=${base}/${remoteFile}
-	curl --cookie "connect.sid=${sid}" -H "Content-Type: text/html" --upload-file ${localFile} ${remoteURL}
-}
-export -f upload_html
-
 
 # delete <remotePath>]
 delete() {
@@ -50,46 +47,41 @@ export -f delete
 # delete public/dokieli/dokieli.html
 # delete public/dokieli/dokieli_markdown.html
 # delete public/dokieli/dokieli_smartdown.html
-# delete public/folder1/folder2/Nested.markdown
+# delete public/dokieli/
+# delete public/folder1/folder2/Nested.md
 # delete public/folder1/folder2/
 # delete public/folder1/
 # delete public/README.md
-# delete public/D3.markdown
-# delete public/Graphviz.markdown
-# delete public/Home.markdown
-# delete public/indexmarkdown.html
-# delete public/indexsmartdown.html
-# delete public/LDF.markdown
-# delete public/Mobius.markdown
-# delete public/P5JS.markdown
-# delete public/SolidLDFlex.markdown
-# delete public/SolidLDFlexContainer.markdown
-# delete public/SolidQueries.markdown
+# delete public/D3.md
+# delete public/Graphviz.md
+# delete public/Home.md
+# delete public/LDF.md
+# delete public/Mobius.md
+# delete public/P5JS.md
+# delete public/SolidLDFlex.md
+# delete public/SolidLDFlexContainer.md
+# delete public/SolidQueries.md
 # delete public/smartdown/index.html
 # delete public/smartdown/
-
 
 # Script to upload files
 
 upload README.md public/README.md
-upload public/folder1/folder2/Nested.markdown
-# upload public/folder1/folder2/
-# upload public/folder1/
-upload public/D3.markdown
-upload public/Graphviz.markdown
-upload public/Home.markdown
-upload_html ../dokieli/indexoverview.html public/dokieli/index.html
-upload_html ../dokieli/index.html public/dokieli/dokieli.html
-upload_html ../dokieli/indexmarkdown.html public/dokieli/dokieli_markdown.html
-upload_html ../dokieli/indexsmartdown.html public/dokieli/dokieli_smartdown.html
-upload public/LDF.markdown
-upload public/Mobius.markdown
-upload public/P5JS.markdown
-upload public/SolidLDFlex.markdown
-upload public/SolidLDFlexContainer.markdown
-upload public/SolidQueries.markdown
-upload_html public/smartdown/index.html
-# upload public/smartdown/
+upload public/folder1/folder2/Nested.md
+upload public/D3.md
+upload public/Graphviz.md
+upload public/Home.md
+upload ../dokieli/indexoverview.html public/dokieli/index.html
+upload ../dokieli/index.html public/dokieli/dokieli.html
+upload ../dokieli/indexmarkdown.html public/dokieli/dokieli_markdown.html
+upload ../dokieli/indexsmartdown.html public/dokieli/dokieli_smartdown.html
+upload public/LDF.md
+upload public/Mobius.md
+upload public/P5JS.md
+upload public/SolidLDFlex.md
+upload public/SolidLDFlexContainer.md
+upload public/SolidQueries.md
+upload public/smartdown/index.html
 
 
 

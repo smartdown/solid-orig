@@ -64,8 +64,8 @@ p5.draw = function() {
 
 ---
 
-The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/Mobius.markdown and via [GitHub](https://github.com/smartdown/solid/public/Mobius.markdown).
+The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/Mobius.md and via [GitHub](https://github.com/smartdown/solid/public/Mobius.md).
 
 ---
 
-[Back to Home](:@/public/Home.markdown)
+[Back to Home](:@/public/Home.md)

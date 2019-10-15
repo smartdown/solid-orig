@@ -9,7 +9,7 @@ This document is inspired by [Build a Solid App on your Lunch Break](https://sol
 
 ### Use LDFlex to detect the current logged-in user.
 
-I explored [query-ldflex](https://github.com/solid/query-ldflex) a little bit in [Smartdown using Solid via LDFlex](/public/SolidLDFlex.markdown). In that document, I adapted the examples from query-ldflex to perform some queries against a specified profile, such as [Ruben Verborgh's](https://ruben.verborgh.org/profile/#me) well-annotated profile, or my own, far less prolific [DoctorBud](https://doctorbud.solid.community/profile/card#me) Solid Community profile.
+I explored [query-ldflex](https://github.com/solid/query-ldflex) a little bit in [Smartdown using Solid via LDFlex](/public/SolidLDFlex.md). In that document, I adapted the examples from query-ldflex to perform some queries against a specified profile, such as [Ruben Verborgh's](https://ruben.verborgh.org/profile/#me) well-annotated profile, or my own, far less prolific [DoctorBud](https://doctorbud.solid.community/profile/card#me) Solid Community profile.
 
 In this Smartdown doc, we are going to use [query-ldflex](https://github.com/solid/query-ldflex) to detect the currently logged in user, and from their profile, obtain that user's `public/` folder URL, and then list the contents and allow simple navigation throughout the visible POD heirarchy.
 
@@ -99,7 +99,7 @@ this.depend = async function() {
     const child = (await p.pathExpression)[0].subject.id;
 
     let controls;
-    if (child.endsWith('.markdown')) {
+    if (child.endsWith('.md')) {
       const localChild = child;
       // For local testing, adjust paths to use local
       // server...
@@ -126,9 +126,9 @@ this.depend = async function() {
 
 ---
 
-The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/SolidLDFlexContainer.markdown and via [GitHub](https://github.com/smartdown/solid/public/SolidLDFlexContainer.markdown).
+The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/SolidLDFlexContainer.md and via [GitHub](https://github.com/smartdown/solid/public/SolidLDFlexContainer.md).
 
 ---
 
-[Back to Home](:@/public/Home.markdown)
+[Back to Home](:@/public/Home.md)
 

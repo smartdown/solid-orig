@@ -4,7 +4,7 @@
 
 Solid complements Smartdown nicely, by providing a *place* and an authentication scheme to enable controlled access (read and write) to this data.
 
-In [Smartdown using Solid via LDFlex](:/public/SolidLDFlex.markdown), we showed how the LDFlex capability could be used to query RDF data sources in a mostly-obvious pattern. In [LDF Demo](:@/public/SolidLDFlex.markdown), we see how client-side Sparql libraries can be used to query LDF servers. In [Inline Playables](:@/public/Inlines.markdown), we showed how any Smartdown playable can be rendered *inline* with its adjacent text in the same way that a Smartdown *cell* would be, enabling [sparklines](https://en.wikipedia.org/wiki/Sparkline), as well as other possibilities.
+In [Smartdown using Solid via LDFlex](:/public/SolidLDFlex.md), we showed how the LDFlex capability could be used to query RDF data sources in a mostly-obvious pattern. In [LDF Demo](:@/public/SolidLDFlex.md), we see how client-side Sparql libraries can be used to query LDF servers. In [Inline Playables](:@/public/Inlines.md), we showed how any Smartdown playable can be rendered *inline* with its adjacent text in the same way that a Smartdown *cell* would be, enabling [sparklines](https://en.wikipedia.org/wiki/Sparkline), as well as other possibilities.
 
 ### List the Beatles
 
@@ -129,11 +129,11 @@ The above example uses the latest (v1.9.1) Comunica Sparql client (`comunica-bro
 
 ---
 
-The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/SolidQueries.markdown and via [GitHub](https://github.com/smartdown/solid/public/SolidQueries.markdown).
+The source for this [Smartdown](https://smartdown.io) card is available at https://smartdown.solid.community/public/SolidQueries.md and via [GitHub](https://github.com/smartdown/solid/public/SolidQueries.md).
 
 ---
 
-[Back to Home](:@/public/Home.markdown)
+[Back to Home](:@/public/Home.md)
 
 
 

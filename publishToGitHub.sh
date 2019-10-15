@@ -8,6 +8,7 @@ rm -rf dist
 mkdir dist/
 cd dist
 cp -r ../public/ ./public/
+cp ../indexGitHubRoot.html ./index.html
 touch .nojekyll
 ls -la
 git init

@@ -1,4 +1,4 @@
-#### Nested Smartdown file `/public/folder1/folder2/Nested.markdown`
+#### Nested Smartdown file `/public/folder1/folder2/Nested.md`
 
 - **bold**
 - *italic*
@@ -18,5 +18,5 @@ this.div.innerHTML =
 
 ---
 
-[Solid LDFlex Container](:@/public/SolidLDFlexContainer.markdown)
-[Home](:@/public/Home.markdown)
+[Solid LDFlex Container](:@/public/SolidLDFlexContainer.md)
+[Home](:@/public/Home.md)
